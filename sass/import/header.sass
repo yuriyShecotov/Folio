@@ -29,7 +29,7 @@
 		padding-top: 161px
 		font-family: $font-head
 		.header__text
-			width: 455px
+			max-width: 474px
 			// height: 263px
 			font-size: 85px
 			font-weight: 900
@@ -47,7 +47,7 @@
 		span:nth-child(2):after
 			position: absolute
 			content: ''
-			width: 240px
+			width: 241px
 			height: 11px
 			background-color: $text-head
 			display: inline-block
@@ -67,20 +67,77 @@
 			grid-template-columns: 1fr 1fr
 			grid-template-rows: 1fr 1fr
 			align-content: space-between
-			min-height: 263px
-			li:nth-child(3),li:nth-child(4)
-				display: flex
-				flex-direction: column
-				justify-content: flex-end
+			display: -ms-grid
+			-ms-grid-columns: 1fr 1fr
+			-ms-grid-rows: 1fr 1fr
+			height: 263px
 			li
+				justify-self: center
+				-ms-grid-column-align: center
 				a
-					display: block
 					font-size: 29px
 					font-weight: 600
 					text-align: center
 					text-transform: uppercase
 					line-height: 0.8
-			
-		
-
-	
+					position: relative
+					padding-bottom: 19px
+					display: flex
+					flex-direction: column
+				a:after
+					content: ''
+					width: 55px
+					height: 3px
+					background-color: $text-menu
+					position: absolute
+					left: 50%
+					bottom: 0
+					transform: translateX(-50%)
+				a:hover:after
+					width: 100%
+					transition-duration: 0.5s
+				a:hover
+					padding-bottom: 19px
+			li:nth-child(1) 
+				-ms-grid-row: 1
+				-ms-grid-column: 1
+			li:nth-child(2) 
+				-ms-grid-row: 1
+				-ms-grid-column: 2
+			li:nth-child(3) 
+				-ms-grid-row: 2
+				-ms-grid-column: 1
+			li:nth-child(4) 
+				-ms-grid-row: 2
+				-ms-grid-column: 2
+			li:nth-child(3),li:nth-child(4)
+				display: flex
+				flex-direction: column
+				justify-content: flex-end
+	.header__network
+		padding-top: 217px
+		padding-bottom: 61px
+		a
+			display: inline-block
+			margin-right: 30px
+			background-repeat: no-repeat
+		.header__twitter
+			width: 24px
+			height: 20px
+			background-image: url(../img/shape-2.png)	
+		.header__facebook
+			width: 14px
+			height: 25px
+			background-image: url(../img/shape-3.png)	
+		.header__instagram
+			width: 25px
+			height: 25px
+			background-image: url(../img/shape-6.png)
+		.header__vimeo
+			width: 25px
+			height: 22px
+			background-image: url(../img/shape-8.png)	
+		.header__Behance
+			width: 30px
+			height: 21px
+			background-image: url(../img/shape-7.png)
