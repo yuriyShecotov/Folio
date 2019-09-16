@@ -1,0 +1,86 @@
+.header
+	background-color: $color-header
+	.header__logo
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 50px
+		.header__logo-icon
+			width: 70px
+			height: 70px
+			background-image: url(../img/logo.png)
+		.header__close-logo
+			width: 24px
+			height: 24px
+			background-image: url(../img/menu-x.png)
+			margin-top: 10px
+	.header__navegation
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 161px
+		font-family: $font-head
+		.header__text
+			width: 455px
+			// height: 263px
+			font-size: 85px
+			font-weight: 900
+			line-height: 1.18
+			// text-align: left
+			text-transform: uppercase
+			color: $text-head
+		span:nth-child(1)
+			font-weight: normal
+			text-decoration: line-through
+			
+		span:nth-child(2)
+			padding-left: 200px
+			position: relative	
+		span:nth-child(2):after
+			position: absolute
+			content: ''
+			width: 240px
+			height: 11px
+			background-color: $text-head
+			display: inline-block
+			left: 0
+			top: 48%
+	.header__link
+		width: 71.6%
+		min-height: 263px
+		ul,li,a,a:hover
+			text-decoration: none
+			margin: 0
+			list-style-type: none
+			padding: 0
+			color: $text-menu
+		ul 
+			display: grid
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: 1fr 1fr
+			align-content: space-between
+			min-height: 263px
+			li:nth-child(3),li:nth-child(4)
+				display: flex
+				flex-direction: column
+				justify-content: flex-end
+			li
+				a
+					display: block
+					font-size: 29px
+					font-weight: 600
+					text-align: center
+					text-transform: uppercase
+					line-height: 0.8
+			
+		
+
+	
