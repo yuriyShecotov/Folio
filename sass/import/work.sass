@@ -1,0 +1,183 @@
+.work
+    text-align: center
+    a,a:hover
+        text-decoration: none
+        list-style-type: none
+        padding-top: 50px
+        color: $text-main
+        font-size: 16px
+        font-weight: bold
+        text-transform: uppercase
+        position: relative
+        padding-bottom: 7px
+        flex-direction: column
+        display: block
+        margin-bottom: 150px
+        margin-left: auto
+        margin-right: auto
+        width: 50px
+
+    a:after
+        content: ''
+        width: 30px
+        height: 2px
+        background-color: $text-main
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translateX(-50%)
+    a:hover:after
+        width: 100%
+        transition-duration: 0.5s
+    a:hover
+        padding-bottom: 7px
+    img
+        display: block
+    .work__head
+        width: 274px
+        padding: 150px 0px 125px
+        font-size: 40px
+        text-align: center
+        font-weight: bold
+        font-family: $font-head
+        text-transform: uppercase
+        text-align: right
+        margin: 0px auto
+        span:after
+            width: 274px
+            content: ''
+            width: 137px
+            height: 5px
+            background-color: $text-main
+            display: inline-block
+            margin-bottom: 14px
+
+    .work__portfolio
+        display: grid
+        grid-template-columns: repeat(12, 98PX)
+        grid-template-rows: repeat(12, 107px)
+        div
+            position: relative
+            p
+                position: absolute
+            .work__card-1-text
+                left: -95px
+                top: 26px
+                font-size: 18px
+                font-family: $font-head
+                color: $text-main
+                font-weight: bold
+                text-align: left
+                text-transform: capitalize
+                width: 162px
+                span
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-weight: normal
+            .work__card-2-text
+                right: -70px
+                top: 26px
+                font-size: 18px
+                font-family: $font-head
+                color: $text-main
+                font-weight: bold
+                text-align: left
+                text-transform: capitalize
+                width: 127px
+                span
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-weight: normal
+            .work__card-3-text
+                left: -30px
+                top: 365px
+                font-size: 18px
+                font-family: $font-head
+                color: $text-main
+                font-weight: bold
+                text-align: left
+                text-transform: capitalize
+                width: 139px
+                span
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-weight: normal
+            .work__card-4-text
+                left: -49px
+                top: 207px
+                font-size: 18px
+                font-family: $font-head
+                color: $text-main
+                font-weight: bold
+                text-align: left
+                text-transform: capitalize
+                width: 125px
+                span
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-weight: normal
+            .work__card-5-text
+                left: -25px
+                top: 25px
+                font-size: 18px
+                font-family: $font-head
+                color: $text-main
+                font-weight: bold
+                text-align: left
+                text-transform: capitalize
+                width: 75px
+                span
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-weight: normal
+        .work__card-1
+            margin-left: 15px
+            grid-column-start: 7
+            grid-column-end: 13
+            grid-row-start: 1
+            grid-row-end: 5
+        .work__card-2
+            margin-right: 20px
+            margin-top: 53px
+            grid-column-start: 1
+            grid-column-end: 5
+            grid-row-start: 2
+            grid-row-end: 7
+        .work__card-3
+            margin-left: 10px
+            margin-top: 58px
+            grid-column-start: 5
+            grid-column-end: 9
+            grid-row-start: 4
+            grid-row-end: 9
+        *:nth-child(4)
+            margin-top: 46px
+            margin-left: 90px
+            margin-bottom: 36px
+            grid-column-start: 9
+            grid-column-end: 11
+            grid-row-start: 5
+            grid-row-end: 6
+        *:nth-child(5)
+            margin-top: 30px
+            margin-left: 82px
+            margin-bottom: 33px
+            grid-column-start: 2
+            grid-column-end: 4
+            grid-row-start: 7
+            grid-row-end: 9
+        .work__card-4
+            margin-left: 20px
+            margin-top: 82px
+            grid-column-start: 9
+            grid-column-end: 13
+            grid-row-start: 6
+            grid-row-end: 12
+     
+        .work__card-5
+            margin-top: 32px
+            grid-column-start: 3
+            grid-column-end: 9
+            grid-row-start: 9
+            grid-row-end: 13
+        
