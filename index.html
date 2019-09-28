@@ -12,30 +12,33 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="wrapper_container header__logo">
-                <a href="#" class="header__logo-icon"></a>
-                <a href="#" class="header__close-logo"></a>
-            </div>
-            <div class="wrapper_container header__navegation">
-                <h2 class="header__text">  a <span>not so</span> different <span>folio</span></h2>
-                <nav class="header__link">
-                    <ul>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#work">work</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="wrapper_container header__network">
-                <a href="#" class="header__twitter"></a>
-                <a href="#" class="header__facebook"></a>
-                <a href="#" class="header__instagram"></a>
-                <a href="#" class="header__vimeo"></a>
-                <a href="#" class="header__Behance"></a>
-            </div>
+            <div class="wrapper_container">
+                
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-icon"></a>
+                        <a href="#" class="header__close-logo"></a>
+                    </div>
+                    <div class="header__navegation">
+                        <h2 class="header__text">  a <span>not so</span> different <span>folio</span></h2>
+                        <nav class="header__link">
+                            <ul>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="#work">work</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__network">
+                        <a href="#" class="header__twitter"></a>
+                        <a href="#" class="header__facebook"></a>
+                        <a href="#" class="header__instagram"></a>
+                        <a href="#" class="header__vimeo"></a>
+                        <a href="#" class="header__Behance"></a>
+                    </div> 
+            </div> 
         </header>
-        <section class=" greeting">
+        <section class="greeting">
             <div class="wrapper_container">
                 <h2 class="greeting__accent">hey!<a name="about"></a></h2>
                 <div class="greeting__content">
@@ -104,9 +107,63 @@
                 </div>
             </div>
         </section>
-        <section class="wrapper_container blog"></section>
-        <section class="wrapper_container contact"></section>
-        <footer class="wrapper_container footer"></footer>
+        <section class="blog">
+            <div class="wrapper_container">
+                <h2 class="blog__header"><span>the</span> blog!</h2>
+                <div class="blog__card">
+                    <img src="img/pc.jpg" alt="" class="blog__img">
+                    <div class="blog__content">
+                        <time class="blog__data">12 february 2015</time>
+                        <h3 class="blog__content-head">ain't no rest for the wicked</h3>
+                        <p class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore texercaitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                        </p>
+                        <a href="" class="blog__link">open post</a>
+                    </div>
+                </div>
+                <div class="blog__card">
+                    <img src="img/shape.png" alt="" class="blog__accent">
+                    <img src="img/flower.jpg" alt="" class="blog__img">
+                    <div class="blog__content">
+                        <time class="blog__data">10 february 2015</time>
+                        <h3 class="blog__content-head">money don’t grow on trees</h3>
+                        <p class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore texercaitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                        </p>
+                        <a href="" class="blog__link">open post</a>
+                    </div>
+                </div>
+                <a href="" class="blog__other">check more posts</a>
+            </div>     
+        </section>
+        <section class="contact">
+            <div class="wrapper_container">
+                <h2 class="contact__head"><span>get in</span> touch!</h2>
+                <div class="contact__item">
+                    <div class="contact__address">
+                        <h3 class="contact__address-head">Our Location</h3>
+                        <address class="contant__text">
+                            123 Different Street Lisbon, Portugal 1200 - 000
+                            (+351) 123 456 789 
+                            Tiago Narciso
+                        </address>
+                        <a href="#" class="content__link">Say Hello!</a>
+                        <div class="content__network">
+                            <a href="" class="content__twitter"></a>
+                            <a href="" class="content__facebook"></a>
+                            <a href="" class="content__instagram"></a>
+                            <a href="" class="content__vimeo"></a>
+                            <a href="" class="content__Behance"></a>
+                        </div>
+                    </div>
+                    <img src="img/layer-26.png" alt="" class="contact__map">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <img src="img/layer-29.png" alt="" class="footer__logo">
+            <p class="copyright">www.tiagonarciso.com © 2015 Tiago Narciso</p>
+        </footer>
     </div>
     <script src="js/scripts.js"></script>
 </body>
